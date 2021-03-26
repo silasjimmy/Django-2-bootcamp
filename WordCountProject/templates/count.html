@@ -1,0 +1,12 @@
+<a href="{%url 'index'%}">Count new words:</a>
+
+<h1>There are {{count}} words in your text</h1>
+
+<h1>Your text:</h1>
+{{fullText}}
+
+<h1>Word count:</h1>
+{% for w, c in sortedWords %}
+{{w}} - {{c}}
+<br>
+{% endfor %}
