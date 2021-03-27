@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}">
+  </head>
+  <body>
+    <nav class="grey darken-3">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo left">Silas Jimmy</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <a href="#" data-target="sidenav" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div class="intro-wrapper grey lighten-2">
+      <div class="container center">
+        <h3>Hi, I'm Silas.</h3>
+        <p>Hey, my name is Silas Jimmy and i like building websites which many people like!</p>
+        <a href="mailto:jimmysilas17@gmail.com" class="btn blue">email me</a>
+      </div>
+    </div>
+    <footer class="page-footer blue border">
+      <div class="footer-copyright center">
+        <div class="container">
+          <p class="grey-text text-darken-3">Copyright Silas Jimmy {% now 'Y' %}</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
